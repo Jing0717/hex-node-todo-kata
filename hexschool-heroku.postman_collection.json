@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "fa3f0282-8335-4386-a7eb-31c509611e06",
+		"name": "hexschool-heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有代辦",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆代辦",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"今天要刷牙\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://secret-escarpment-47630.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"secret-escarpment-47630",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://secret-escarpment-47630.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"secret-escarpment-47630",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://secret-escarpment-47630.herokuapp.com/todos/322f97dc-fa66-4061-9941-1c7c640d300e",
+					"protocol": "https",
+					"host": [
+						"secret-escarpment-47630",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"322f97dc-fa66-4061-9941-1c7c640d300e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆代辦",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"1234\"\n}"
+				},
+				"url": {
+					"raw": "https://secret-escarpment-47630.herokuapp.com/todos/a079b36d-46f9-4f44-b2b3-00473cba4678",
+					"protocol": "https",
+					"host": [
+						"secret-escarpment-47630",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"a079b36d-46f9-4f44-b2b3-00473cba4678"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
